@@ -1,0 +1,23 @@
+[alias]     # command aliases
+b = "build"
+c = "check"
+t = "test"
+r = "run"
+rr = "run --release"
+
+[cargo-new]
+vcs = "git"
+
+[term]
+verbose = false
+color = 'auto'
+
+[target.thumbv7m-none-eabi]
+runner = "qemu-system-arm -cpu cortex-m3 -machine lm3s6965evb -S -gdb tcp::3333 -semihosting-config enable=on,target=native -nographic -kernel"
+rustflags = [
+    "-C", "link-arg=-Tlink.x",
+    "-C", "link-arg=-Tlog.x",
+]
+
+[build]
+target = "thumbv7m-none-eabi"
