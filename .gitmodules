@@ -1,0 +1,9 @@
+[submodule "app"]
+	path = app
+	url = git@github.com:wizzk42/armv7-embedded-rust-app.git
+[submodule "rt"]
+	path = rt
+	url = git@github.com:wizzk42/armv7-embedded-rust-rt.git
+[submodule "log"]
+	path = log
+	url = git@github.com:wizzk42/armv7-embedded-rust-log
