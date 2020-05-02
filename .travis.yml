@@ -26,7 +26,12 @@ matrix:
             - gcc-arm-none-eabi
       if: branch = master
 
-before_install: set -e
+git:
+  submodules: false
+
+before_install:
+  - set -e
+  - git submodule update --init --remote --recursive
 
 install:
   - bash ci/install.sh

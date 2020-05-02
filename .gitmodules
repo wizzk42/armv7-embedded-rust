@@ -1,9 +1,12 @@
 [submodule "app"]
 	path = app
-	url = git@github.com:wizzk42/armv7-embedded-rust-app.git
+    url = https://github.com/wizzk42/armv7-embedded-rust-app.git
+    update = rebase
 [submodule "rt"]
 	path = rt
-	url = git@github.com:wizzk42/armv7-embedded-rust-rt.git
+	url = https://github.com/wizzk42/armv7-embedded-rust-rt.git
+    update = rebase
 [submodule "log"]
 	path = log
-	url = git@github.com:wizzk42/armv7-embedded-rust-log
+	url = https://github.com/wizzk42/armv7-embedded-rust-log
+    update = rebase
