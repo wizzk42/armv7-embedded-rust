@@ -1,5 +1,7 @@
 = Learning how-to use Rust on embedded systems
 
+image:https://travis-ci.com/wizzk42/armv7-embedded-rust.svg?branch=master["Build Status", link="https://travis-ci.com/wizzk42/armv7-embedded-rust"]
+
 - app contains a sample application
 - rt contains the runtime for ARM Cortex-M3
 - log contains some utils to implement logging on embedded systems
