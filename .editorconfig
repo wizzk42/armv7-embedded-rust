@@ -3,13 +3,32 @@ root = true
 [*]
 end_of_line = lf
 charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-indent_style = space
 indent_size = 4
+tab_width = 4
+indent_style = space
+max_line_length = 120
 
-[*.md]
+[*.rs]
+insert_final_newline = true
+continuation_indent_size = 8
+trim_trailing_whitespace = true
+
+[*.s]
+continuation_indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{yml, yaml}]
+indent_size = 2
+insert_final_newline = false
 trim_trailing_whitespace = false
 
-[*.yml]
+[*.{adoc, diff, md, toml}]
+trim_trailing_whitespace = false
+max_line_length = off
+
+[{package.json, .travis.yml}]
 indent_size = 2
+max_line_length = off
+
+[.editorconfig]
+insert_final_newline = false
