@@ -1,6 +1,23 @@
 = Learning how-to use Rust on embedded systems
+:toc: right
 
-image:https://travis-ci.com/wizzk42/armv7-embedded-rust.svg?branch=master["Build Status", link="https://travis-ci.com/wizzk42/armv7-embedded-rust"]
+*STATUS:* image:https://travis-ci.com/wizzk42/armv7-embedded-rust.svg?branch=master["Build Status", link="https://travis-ci.com/wizzk42/armv7-embedded-rust"]
+
+'''
+
+|===
+|MODULE | STATUS
+
+|*log*
+|image:https://travis-ci.com/wizzk42/armv7-embedded-rust-log.svg?branch=master["Build Status", link="https://travis-ci.com/wizzk42/armv7-embedded-rust-log"]
+
+|*rt* 
+|image:https://travis-ci.com/wizzk42/armv7-embedded-rust-rt.svg?branch=master["Build Status", link="https://travis-ci.com/wizzk42/armv7-embedded-rust-rt"]
+|===
+
+'''
+
+== MODULES DESCRIPTION
 
 - app contains a sample application
 - rt contains the runtime for ARM Cortex-M3
