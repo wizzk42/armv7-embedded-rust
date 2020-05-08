@@ -1,0 +1,52 @@
+language: rust
+
+matrix:
+  include:
+    - env: TARGET=thumbv7m-none-eabi
+      rust: stable
+      addons:
+        apt:
+          packages:
+            - gcc-arm-none-eabi
+      if: branch = master
+
+    - env: TARGET=thumbv7m-none-eabi
+      rust: beta
+      addons:
+        apt:
+          packages:
+            - gcc-arm-none-eabi
+      if: branch = master
+
+    - env: TARGET=thumbv7m-none-eabi
+      rust: nightly
+      addons:
+        apt:
+          packages:
+            - gcc-arm-none-eabi
+      if: branch = master
+
+before_install: set -e
+
+install:
+  - bash ci/install.sh
+
+script:
+  - cargo check --target $TARGET
+  - cargo build --verbose --all
+
+after_script: set +e
+
+cache: cargo
+
+before_cache:
+  - rm -rf "$HOME/.cargo/registry/src"
+  - chmod -R a+r $HOME/.cargo;
+
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    on_success: never

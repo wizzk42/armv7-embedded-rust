@@ -1,0 +1,3 @@
+*STATUS:* image:https://travis-ci.com/wizzk42/armv7-embedded-rust-rt-lm3s6965.svg?branch=master["Build Status",link="https://travis-ci.com/wizzk42/armv7-embedded-rust-rt-lm3s6965"]
+
+see https://github.com/wizzk42/armv7-embedded-rust[main project]

@@ -1,0 +1,21 @@
+[package]
+name = "rt-lm3s6965"
+categories = ["embedded", "no-std"]
+description = "Minimal runtime for ARM Cortex-M series microcontrollers"
+keywords = ["arm", "cortex-m", "runtime", "lm3s6965"]
+version = "0.1.0"
+authors = ["Matthias  <wizzk42@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+
+
+[features]
+lm3s6965 = []
+
+[badges]
+travis-ci = { repository = " wizzk42 / armv7-embedded-rust-rt-lm3s6965", branch = "master" }
+maintenance = { status = "experimental" }

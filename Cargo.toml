@@ -1,2 +1,2 @@
 [workspace]
-members = [ "rt", "log", "app" ]
+members = [ "devices/rt-lm3s6965", "rt", "log", "app" ]
